@@ -14,15 +14,21 @@ maxdircooldown = noone;
 npcspeed = 2;
 hsp = 0;
 vsp = 0;
-range = 0;
+range = 250;
 horizontalmovement = true;
 verticalmovement = true;
 stoprandom = true;
 xorigin = oPlayer.x;
 yorigin = oPlayer.y;
 
-choice1 = choose(-400,400);
-choice2 = choose(-400,400);
+//Shooting
+shooting = true;
+bullet = "oEnemyBullet1"
+bulletspeed = 3;
+maxshotdelay = 2 * room_speed;
+shotdelay = maxshotdelay;
+spread = 5;
+
 
 diagonalposition[0] = false;
 diagonalposition[1] = false;

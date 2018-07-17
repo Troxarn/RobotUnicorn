@@ -1,38 +1,38 @@
 {
-    "id": "574ce160-0d7f-468f-a041-88209a25826b",
+    "id": "fc1f6632-710a-403e-bb30-04f0a08c0ed4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oBullet",
+    "name": "oEnemyBullet1",
     "eventList": [
         {
-            "id": "c791a359-06be-4c1b-86b6-2e3226a99e24",
+            "id": "9a201592-d2f9-4c7e-acf5-a61934063ee2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "574ce160-0d7f-468f-a041-88209a25826b"
+            "m_owner": "fc1f6632-710a-403e-bb30-04f0a08c0ed4"
         },
         {
-            "id": "e0e5c09d-ae02-43f8-9081-44a9b2e4faf4",
+            "id": "7e223043-2235-4938-bc19-580417b77a3d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "574ce160-0d7f-468f-a041-88209a25826b"
+            "m_owner": "fc1f6632-710a-403e-bb30-04f0a08c0ed4"
         },
         {
-            "id": "d33deb46-d241-4325-b5c8-c5ea6b6d1fde",
+            "id": "cd5f3104-5edf-44c5-9ac9-2b6d24d18772",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "823c9d8a-729b-4466-9130-f895f7737bea",
+            "collisionObjectId": "2f1f02a3-e7d2-4013-aaeb-7e8a733adeed",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "574ce160-0d7f-468f-a041-88209a25826b"
+            "m_owner": "fc1f6632-710a-403e-bb30-04f0a08c0ed4"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,6 +53,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "538d1cc8-e1a7-4549-bee9-d4eb2dc0e2c4",
+    "spriteId": "8bb684ad-5983-4f60-8d53-6252e684c37b",
     "visible": true
 }

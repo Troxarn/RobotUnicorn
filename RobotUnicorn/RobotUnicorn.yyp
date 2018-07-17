@@ -1023,6 +1023,14 @@
             }
         },
         {
+            "Key": "8bb684ad-5983-4f60-8d53-6252e684c37b",
+            "Value": {
+                "id": "66734607-cd0a-4c3c-b0c0-54ca3083e096",
+                "resourcePath": "sprites\\sEnemyBullet1\\sEnemyBullet1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8bce61cb-a92a-4f17-acff-c1f9d42b57bf",
             "Value": {
                 "id": "2d9d7103-1aa4-44f4-acd2-7ed52737f7e2",
@@ -1308,6 +1316,14 @@
                 "id": "53085a95-522e-472f-aba9-d30c8bb16704",
                 "resourcePath": "sprites\\sExit\\sExit.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ac2e6fa6-d65d-43b9-8b39-abd74f4ab382",
+            "Value": {
+                "id": "19a436df-9d8e-4d9d-b4ea-9c8e290b2c7d",
+                "resourcePath": "objects\\oEnemy2\\oEnemy2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1908,6 +1924,14 @@
                 "id": "f5919ed2-d33c-49e6-bb4c-d61f4deff5bc",
                 "resourcePath": "sprites\\sPlaystation_Circle\\sPlaystation_Circle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fc1f6632-710a-403e-bb30-04f0a08c0ed4",
+            "Value": {
+                "id": "0c800da7-a718-4cfe-81bb-c0331c66e088",
+                "resourcePath": "objects\\oEnemyBullet1\\oEnemyBullet1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
