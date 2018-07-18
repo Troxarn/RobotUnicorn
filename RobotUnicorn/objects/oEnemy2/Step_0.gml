@@ -14,21 +14,17 @@ if hp <= 0
 //movement
 NpcMovement();
 
+//Angle toward player
+image_angle = point_direction(x,y,oPlayer.x,oPlayer.y) - 90;
+
+
 //shooting
-if shooting = true
+if shooting = true && runonce = false
 {
-	if shotdelay = 0
+	with (instance_create_layer(x,y,"Instances",oWeaponEnemy1))
 	{
-		with (instance_create_layer(x,y,"Bullets",oEnemyBullet1))
-		{
-			speed = other.bulletspeed;
-			direction = point_direction(x,y, oPlayer.x, oPlayer.y) + random_range (-other.spread,other.spread); //Random spread
-			image_angle = direction;
-		}
-		shotdelay = maxshotdelay;
+		creator = other.id;
+		other.children = id;
 	}
-	else
-	{
-		shotdelay --;
-	}
+	runonce = true;
 }

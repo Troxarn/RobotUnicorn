@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "1ed10cde-1fa0-4e0e-a749-29abf702eb32",
+            "Value": {
+                "id": "52c4e759-c796-4bef-9246-8eecd5c2a768",
+                "resourcePath": "objects\\oAmmoBar\\oAmmoBar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1f9a366b-9d42-477a-b9f1-53957540b6f9",
             "Value": {
                 "id": "884e1a45-46ad-43ca-9231-f0f64a1a594c",
@@ -490,7 +498,7 @@
             "Key": "381dd1db-f165-4076-9e32-bfc07c497a96",
             "Value": {
                 "id": "c6716e8d-f0b4-4071-a17b-c22acdbd9305",
-                "resourcePath": "objects\\oWeaponShotty\\oWeaponShotty.yy",
+                "resourcePath": "objects\\oWeaponTemplate\\oWeaponTemplate.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -564,6 +572,14 @@
                 "id": "f0585e2c-de42-4bec-b4fb-27400a01a298",
                 "resourcePath": "views\\43fa9873-3756-47ab-be7d-7138cb3bfb32.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "479d7b89-e791-4c69-9a37-d637b22aa4e9",
+            "Value": {
+                "id": "5fdf2ba3-b8e2-4811-8626-2399cc6edca8",
+                "resourcePath": "sprites\\sSword\\sSword.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -999,6 +1015,14 @@
             }
         },
         {
+            "Key": "85dc54ca-f4fc-4aef-b080-4c2c1be87250",
+            "Value": {
+                "id": "07c1c5eb-6b25-45b3-aabb-1ef8d5a5b63a",
+                "resourcePath": "objects\\oSword\\oSword.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "877f5e60-ab1d-4bfc-a783-6f7c7ab59a89",
             "Value": {
                 "id": "56af2acc-ec54-47a7-8a6d-99c95c7f011e",
@@ -1043,6 +1067,14 @@
             "Value": {
                 "id": "ccc0d81c-a65a-4cc4-8ff6-4d53ff8a8b2b",
                 "resourcePath": "objects\\oScissor\\oScissor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8c3cf3bd-1f10-4bc3-98fe-0d7429148e48",
+            "Value": {
+                "id": "88275afc-53de-4d47-877a-5a8766f8dd26",
+                "resourcePath": "objects\\oWeaponEnemy1\\oWeaponEnemy1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1243,14 +1275,6 @@
             "Value": {
                 "id": "a2420a97-b2a2-4e5e-91e4-839199de612c",
                 "resourcePath": "objects\\oAnswerBox\\oAnswerBox.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "a583c065-269b-433f-8f20-33be36706edf",
-            "Value": {
-                "id": "97b943f3-95a3-45b5-a089-410eb2f316df",
-                "resourcePath": "objects\\oWeapon1\\oWeapon1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1639,6 +1663,14 @@
             }
         },
         {
+            "Key": "d1daca91-a99f-43b5-95fd-757b9055ac81",
+            "Value": {
+                "id": "8cb3ce2d-2f23-46e9-a333-617f03342b95",
+                "resourcePath": "sprites\\sWeaponEnemy1\\sWeaponEnemy1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d493b2f8-d5b1-4d5e-987f-f9c1670516eb",
             "Value": {
                 "id": "805ef3e4-20eb-48b2-8082-e01c1a071023",
@@ -1876,6 +1908,14 @@
                 "id": "45ad3efe-0292-41cd-af64-d87b1e0c05e0",
                 "resourcePath": "views\\f50fcbde-65a5-4b3c-981d-94a0a4e63b98.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f75a4cee-8897-4549-937c-a1989ec88ede",
+            "Value": {
+                "id": "72bdf2c9-99f7-48c8-9baa-0fcdd6c0599b",
+                "resourcePath": "objects\\oAmmoFill\\oAmmoFill.yy",
+                "resourceType": "GMObject"
             }
         },
         {

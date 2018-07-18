@@ -10,7 +10,9 @@
         "8bb684ad-5983-4f60-8d53-6252e684c37b",
         "2325018a-ec5c-4535-8fc3-a4ed05f695c1",
         "8fc7e0a8-b78d-41fd-b17a-fd69faac2b39",
-        "5a23c595-f597-4f64-a4fb-05f0082af300"
+        "d1daca91-a99f-43b5-95fd-757b9055ac81",
+        "5a23c595-f597-4f64-a4fb-05f0082af300",
+        "479d7b89-e791-4c69-9a37-d637b22aa4e9"
     ],
     "filterType": "GMSprite",
     "folderName": "RobotUnicorn",

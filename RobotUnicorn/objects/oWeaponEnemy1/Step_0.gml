@@ -3,26 +3,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//If Player ded
-if !instance_exists(oPlayer)
-{
-	instance_destroy();
-}
-
-//start check if player exists
-if instance_exists(oPlayer) 
-{
 
 //Gun position
-x = oPlayer.x;
-y = oPlayer.y;
+x = creator.x;
+y = creator.y;
 
 //Gun angle
-image_angle = point_direction(x,y,mouse_x,mouse_y);
+image_angle = point_direction(x,y,oPlayer.x,oPlayer.y);
 
 
 //decreasing firingdelay and recoil...?
-firingdelay = firingdelay - 1;
+firingdelay --;
 recoil = max(0,recoil - 1)
 
 	//Checking recoilfiredelay and making shooting possible after recoil is completed.
@@ -44,7 +35,7 @@ else
 
 
 //Firing gun
-if (mouse_check_button(mb_left)) && (firingdelay < 0) && allowfire = true
+if (firingdelay < 0) && allowfire == true && (point_distance(x,y,oPlayer.x,oPlayer.y) < maxshootingrange)
 {
 	recoil = maxrecoil;
 	firingdelay = maxfiringdelay;
@@ -56,7 +47,7 @@ if (mouse_check_button(mb_left)) && (firingdelay < 0) && allowfire = true
 	{
 		if i <= (maxbullets/2)
 		{
-			with (instance_create_layer(x+dcos(image_angle)*(sprite_width/2),y-dsin(image_angle)*(sprite_width/2),"Bullets",oBullet))
+			with (instance_create_layer(x+dcos(image_angle)*(sprite_width/2),y-dsin(image_angle)*(sprite_width/2),"Bullets",oEnemyBullet1))
 			{
 				speed = other.bulletspeed;
 				direction = other.image_angle + (-other.shotgunspread * i) + random_range (-other.spread,other.spread); //Random spread
@@ -65,7 +56,7 @@ if (mouse_check_button(mb_left)) && (firingdelay < 0) && allowfire = true
 		}
 		else
 		{
-			with (instance_create_layer(x+dcos(image_angle)*(sprite_width/2),y-dsin(image_angle)*(sprite_width/2),"Bullets",oBullet))
+			with (instance_create_layer(x+dcos(image_angle)*(sprite_width/2),y-dsin(image_angle)*(sprite_width/2),"Bullets",oEnemyBullet1))
 			{
 				speed = other.bulletspeed;
 				direction = other.image_angle + (other.shotgunspread * leftspreadmultiplier) + random_range (-other.spread,other.spread); //Random spread
@@ -90,9 +81,3 @@ else
 {
 	image_yscale = 1;
 }
-
-
-
-
-
-} // end of playercheck

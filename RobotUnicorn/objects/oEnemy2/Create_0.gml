@@ -21,6 +21,7 @@ stoprandom = true;
 xorigin = oPlayer.x;
 yorigin = oPlayer.y;
 
+
 //Shooting
 shooting = true;
 bullet = "oEnemyBullet1"
@@ -28,6 +29,7 @@ bulletspeed = 3;
 maxshotdelay = 2 * room_speed;
 shotdelay = maxshotdelay;
 spread = 5;
+runonce = false;
 
 
 diagonalposition[0] = false;

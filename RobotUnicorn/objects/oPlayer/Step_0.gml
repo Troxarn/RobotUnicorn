@@ -42,8 +42,14 @@ if keyboard_check_pressed(vk_escape)
 	game_end();
 }
 
+//Melee
+if key_button2 && !instance_exists(oSword)
+{
+	
+}
+
 //weapon changing
-if key_button2
+/*if key_button2
 {
 	if instance_exists(oWeapon1)
 	{
@@ -53,9 +59,9 @@ if key_button2
 	else
 	{
 		instance_destroy(oWeaponParent);
-		instance_create_depth(x,y,depth,oWeapon1);
+		instance_create_depth(x,y,depth,oWeaponShotty);
 	}
-}
+}*/
 
 if hp <= 0
 {

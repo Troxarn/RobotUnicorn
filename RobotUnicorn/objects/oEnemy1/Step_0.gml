@@ -12,3 +12,6 @@ if hp <= 0
 }
 
 NpcMovement();
+
+//Angle toward player
+image_angle = point_direction(x,y,oPlayer.x,oPlayer.y) - 90;
