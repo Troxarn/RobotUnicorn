@@ -1,0 +1,1 @@
+direction += 90 * dsin(pi * (1) + 0); // skapar ett cirkelmönster med utgångspunkten där den skapas.
