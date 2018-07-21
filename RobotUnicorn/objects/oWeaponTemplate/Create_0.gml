@@ -13,3 +13,6 @@ recoilfiredelay = false; //if this is true weapon can only fire when the recoil 
 bulletspeed = 5;
 allowfire = true;
 bulletobject = oBullet;
+
+//angle
+image_angle = oVariableChecker.weapon_angle

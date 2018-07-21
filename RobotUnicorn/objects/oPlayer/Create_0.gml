@@ -1,8 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//Gamepad deadzone
+gamepad_set_axis_deadzone(0, 0.3);
+
 //Creating support objects
 instance_create_layer(1, 1, layer, oVariableChecker);
+/*if gamepad_is_connected(0)
+{
+	instance_create_layer(x + 180, y, layer, oCrosshair);
+}*/
 
 //Movementcontrolvariable
 movex = 0;

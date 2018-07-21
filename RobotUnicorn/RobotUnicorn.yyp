@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "5f7304f3-2f27-4435-9237-e52d5e2f0ef6",
+            "Value": {
+                "id": "d95a00d9-925f-48c5-8f42-bf4919e8d710",
+                "resourcePath": "sprites\\sCrosshair\\sCrosshair.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6148fa2b-6261-462d-8407-d9c778f6fd42",
             "Value": {
                 "id": "1e7785c8-2b47-4f44-b7f8-430fc448cdc0",
@@ -1132,6 +1140,14 @@
                 "id": "0953e6a7-d680-499d-ad8d-97b3b15d60ff",
                 "resourcePath": "sprites\\sFriend\\sFriend.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8d4e5676-69d3-4d2a-8802-9600121165ec",
+            "Value": {
+                "id": "683a0a0e-6433-414f-ada9-813f352554be",
+                "resourcePath": "objects\\oCrosshair\\oCrosshair.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -17,8 +17,21 @@ if instance_exists(oPlayer)
 x = oPlayer.x;
 y = oPlayer.y;
 
+
 //Gun angle
-image_angle = point_direction(x,y,mouse_x,mouse_y);
+if gamepad_is_connected(0)
+{
+	if oVariableChecker.hraxis != 0  || oVariableChecker.vraxis != 0
+	{
+		image_angle = point_direction(0, 0, oVariableChecker.hraxis, oVariableChecker.vraxis);
+	}
+
+}
+	//image_angle = point_direction(x, y, oCrosshair.x, oCrosshair.y);
+else
+{
+	image_angle = point_direction(x,y,mouse_x,mouse_y);
+}
 
 
 //decreasing firingdelay and recoil...?
@@ -53,7 +66,7 @@ else
 }
 
 //Firing gun
-if (mouse_check_button(mb_left)) && (firingdelay < 0) && allowfire = true
+if oPlayer.key_button8 && (firingdelay < 0) && allowfire = true
 {
 	recoil = maxrecoil;
 	firingdelay = maxfiringdelay;
@@ -110,6 +123,6 @@ else
 
 
 
-
+oVariableChecker.weapon_angle = image_angle;
 
 } // end of playercheck
