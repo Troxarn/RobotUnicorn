@@ -65,7 +65,7 @@ else
 }
 
 //Firing gun
-if oPlayer.key_button8 && (firingdelay < 0) && allowfire = true
+if (firingdelay < 0) && allowfire = true && mouse_check_button(oPlayer.key_button8) || (firingdelay < 0) && allowfire = true && gamepad_button_check(0, oPlayer.gamepad_key_button8)
 {
 	recoil = maxrecoil;
 	firingdelay = maxfiringdelay;
@@ -99,7 +99,7 @@ if oPlayer.key_button8 && (firingdelay < 0) && allowfire = true
 
 
 //reload
-if oPlayer.key_button3 && firingdelay < 0
+if firingdelay < 0 && keyboard_check_pressed(oPlayer.key_button3) || firingdelay < 0 && gamepad_button_check_pressed(0, oPlayer.gamepad_key_button3)
 {
 	ammo = maxammo;
 }

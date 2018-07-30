@@ -11,6 +11,9 @@ instance_create_layer(1, 1, layer, oVariableChecker);
 	instance_create_layer(x + 180, y, layer, oCrosshair);
 }*/
 
+//Meleeitem
+meleeitem = oSword;
+
 //Movementcontrolvariable
 movex = 0;
 movey = 0;

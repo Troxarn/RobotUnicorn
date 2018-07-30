@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "1f69e02d-a350-4f6b-a688-6000eb640b3c",
+            "Value": {
+                "id": "c4b13322-7648-4669-a562-1379e4d1c7ca",
+                "resourcePath": "sprites\\sWallCompanion\\sWallCompanion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f9a366b-9d42-477a-b9f1-53957540b6f9",
             "Value": {
                 "id": "884e1a45-46ad-43ca-9231-f0f64a1a594c",
