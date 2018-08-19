@@ -1,4 +1,4 @@
-var bbox_side;
+
 
 if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
 if (tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top) != 0 || tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_bottom) != 0 )

@@ -4,6 +4,7 @@
 //saving the weapon angle
 weapon_angle = 0;
 
+//Weaponinformation
 active_weapon = noone;
 sinebulletamount = 0;
 

@@ -29,3 +29,19 @@ walksp = 4;
 
 //HP
 hp = 10000
+
+//Jumping
+jumpcd = 0;
+maxjumpcd = 1*room_speed;
+jumpduration = 0;
+maxjumpduration = 1*room_speed;
+jumpstart = false;
+jumpstop = false;
+
+//Dashing
+dashing = false;
+maxdashtimer = (0.3*room_speed);
+dashtimer = maxdashtimer;
+//BBox
+bbox_side = 0;
+test = 0;
