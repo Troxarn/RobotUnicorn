@@ -4,13 +4,10 @@
 //saving the weapon angle
 weapon_angle = 0;
 
-//Weaponinformation
-active_weapon = noone;
-sinebulletamount = 0;
-
 obtained_sword = true;
 
-active_weapon = oWeaponTemplate;
+//Sinegun
+sinebulletamount = 0;
 
 //Shields
 shield_count = 0;
@@ -19,3 +16,11 @@ shieldgained = true;
 //Right stick
 hraxis = noone;
 vraxis = noone;
+
+//Weaponsystem
+active_weapon = oWeaponTemplate;
+weapon[1] = oWeaponTemplate;
+weapon[2] = oWeaponSine;
+
+weapon1ammo = noone;
+weapon2ammo = noone;

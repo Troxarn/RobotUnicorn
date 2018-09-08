@@ -28,7 +28,7 @@ vsp = 0;
 walksp = 4;
 
 //HP
-hp = 10000
+hp = 10000;
 
 //Jumping
 jumpcd = 0;
@@ -38,10 +38,11 @@ maxjumpduration = 1*room_speed;
 jumpstart = false;
 jumpstop = false;
 
-//Dashing
+//Dashin
 dashing = false;
-maxdashtimer = (0.3*room_speed);
-dashtimer = maxdashtimer;
-//BBox
-bbox_side = 0;
-test = 0;
+
+//Safe Coordinates
+safetyx = x;
+safetyy = y;
+safetytimermax = room_speed;
+safetytimer = safetytimermax;

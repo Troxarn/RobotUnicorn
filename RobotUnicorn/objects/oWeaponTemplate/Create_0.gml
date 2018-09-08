@@ -14,5 +14,7 @@ bulletspeed = 5;
 allowfire = true;
 bulletobject = oBullet;
 
+weaponnbr = noone;
+
 //angle
 image_angle = oVariableChecker.weapon_angle

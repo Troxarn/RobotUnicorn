@@ -55,8 +55,6 @@ gamepad_pausebutton = gamepad_button_check_pressed(0, gp_start);
 
 
 //Calculate movement
-if jumpduration == 0
-{
 if gamepad_is_connected(0)
 {
 movex = gamepad_key_right - gamepad_key_left;
@@ -67,60 +65,7 @@ else
 movex = keyboard_check(key_right) - keyboard_check(key_left);
 movey = keyboard_check(key_down) - keyboard_check(key_up);
 }
-}
 
-if dashing = false
-{
-	hsp = movex * walksp;
-	vsp = movey * walksp;
-}
-//Dash
-if gamepad_button_check_pressed(0,gamepad_key_button7) || mouse_check_button_pressed(key_button7)
-{
-	hsp = walksp * 5
-	vsp = walksp * 5
-	dashing = true;
-}
-
-
-//WallDash
-if jumpduration > (maxjumpduration/5) && keyboard_check_pressed(key_button1) || jumpduration > (maxjumpduration/5) && gamepad_button_check_pressed(0,gamepad_key_button1)
-{
-	if (tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top))
-	{
-		//vsp = walksp * 20
-		test = 1;
-	}
-}
-
-//Halting dashes
-if dashing == true
-{
-	dashtimer --;
-}
-
-if dashtimer <= 0
-{
-	dashing = false;
-	dashtimer = maxdashtimer;
-}
-
-/*
-if vsp > walksp || vsp < (-walksp)
-{
-	vsp = vsp - (sign(vsp));
-	dashing = true;
-}
-else if hsp > (walksp * sign(hsp))
-{
-	hsp -= (sign(hsp));
-	dashing = true;
-}
-else
-{
-	dashing = false;
-}
-*/
 //Jumping
 if keyboard_check_pressed(key_button1) && jumpcd <= 0 || gamepad_button_check_pressed(0,gamepad_key_button1) && jumpcd <= 0
 {
@@ -140,6 +85,8 @@ if jumpduration <= 0 && !(jumpcd  <= 0)
 }
 
 //Final movement
+hsp = movex * walksp;
+vsp = movey * walksp;
 x = x + hsp;
 y = y + vsp;
 
@@ -154,8 +101,7 @@ if keyboard_check_pressed(vk_escape)
 //Melee
 if keyboard_check_pressed(key_button5) && !instance_exists(meleeitem)
 {
-	//instance_create_layer(x+ (dcos(point_direction(oPlayer.x,oPlayer.y, mouse_x, mouse_y)) * 15),y- (dsin(point_direction(oPlayer.x,oPlayer.y, mouse_x, mouse_y)) * 15),"Bullets",meleeitem);
-	instance_create_layer(x+dcos(oWeaponParent.image_angle)*(sprite_width/3),y-dsin(oWeaponParent.image_angle)*(sprite_width/3),"Instances",oPlayer.meleeitem);
+	instance_create_layer(x+ (dcos(point_direction(oPlayer.x,oPlayer.y, mouse_x, mouse_y)) * 15),y- (dsin(point_direction(oPlayer.x,oPlayer.y, mouse_x, mouse_y)) * 15),"Bullets",meleeitem);
 }
 else if gamepad_button_check_pressed(0, oPlayer.gamepad_key_button5) && !instance_exists(meleeitem)
 {
@@ -165,17 +111,44 @@ else if gamepad_button_check_pressed(0, oPlayer.gamepad_key_button5) && !instanc
 //weapon changing
 if keyboard_check_pressed(key_button2) ||  gamepad_button_check_pressed(0, oPlayer.gamepad_key_button2)
 {
-	if instance_exists(oWeaponTemplate)
+	if instance_exists(oVariableChecker.weapon[1])
 	{
 		instance_destroy(oWeaponParent);
-		oVariableChecker.active_weapon = instance_create_depth(x,y,depth,oWeaponSine);
+		with instance_create_depth(x,y,depth,oVariableChecker.weapon[2])
+		{
+			oVariableChecker.active_weapon = id;
+			if !(oVariableChecker.weapon2ammo == noone)
+			{
+				ammo = oVariableChecker.weapon2ammo;
+			}
+		}
 	}
 	else
 	{
 		instance_destroy(oWeaponParent);
-		oVariableChecker.active_weapon = instance_create_depth(x,y,depth,oWeaponTemplate);
+		with instance_create_depth(x,y,depth,oVariableChecker.weapon[1])
+		{
+			oVariableChecker.active_weapon = id;
+			if !(oVariableChecker.weapon1ammo == noone)
+			{
+				ammo = oVariableChecker.weapon1ammo;
+			}
+		}
 	}
 }
+
+//Storing safe positioncoordinates
+if dashing == false
+{
+	safetytimer --
+	if safetytimer <= 0 && !collision_circle(x,y,32,oHole,false,true)
+	{
+		safetyx = x;
+		safetyy = y;
+		safetytimer = safetytimermax;
+	}
+}
+
 
 if hp <= 0
 {
