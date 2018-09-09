@@ -28,7 +28,7 @@ vsp = 0;
 walksp = 4;
 
 //HP
-hp = 10000;
+hp = 1000;
 
 //Jumping
 jumpcd = 0;
@@ -46,3 +46,13 @@ safetyx = x;
 safetyy = y;
 safetytimermax = room_speed;
 safetytimer = safetytimermax;
+
+//Decel/accel variables
+acceleration = false;
+walkspeedAccel = 0.09 //How fast player accelerates while holding key
+walkspeedDecel = 0.1 //How fast player decelerates after releasing key
+walkspeedaccX = 0
+walkspeedaccY = 0
+walkspeedaccMax = 1 // Dont change, basicly just fucks up movement
+walkspeedaccXsign = 1
+walkspeedaccYsign = 1

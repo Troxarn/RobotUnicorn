@@ -84,11 +84,22 @@ if jumpduration <= 0 && !(jumpcd  <= 0)
 	jumpcd --
 }
 
+
+if acceleration = true
+{
+//Robins accel/decel kod
+	PlayerAccDec();
+}
+else
+{
+	hsp = movex * walksp;
+	vsp = movey * walksp;
+}
+
 //Final movement
-hsp = movex * walksp;
-vsp = movey * walksp;
 x = x + hsp;
 y = y + vsp;
+
 
 TilePlayerCollision();
 

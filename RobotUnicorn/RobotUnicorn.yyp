@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "0de42840-eed9-468b-ba94-fa201c41f5e4",
+            "Value": {
+                "id": "329ff1c4-b11d-4aa2-9702-6642533dd6bf",
+                "resourcePath": "scripts\\TileEnemyCollision\\TileEnemyCollision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0e6dd55b-140d-47e5-b4a4-71631393a321",
             "Value": {
                 "id": "0e611bb3-b4a0-49b8-bcc5-1ce2420bb255",
@@ -268,6 +276,14 @@
                 "id": "52c4e759-c796-4bef-9246-8eecd5c2a768",
                 "resourcePath": "objects\\oAmmoBar\\oAmmoBar.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1efcdb6f-da09-439a-8ccb-f8083a341327",
+            "Value": {
+                "id": "41bf88c1-27f6-418c-b29c-da1ac2426400",
+                "resourcePath": "scripts\\PlayerAccDec\\PlayerAccDec.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2166,7 +2182,9 @@
         "f1e54d28-855c-452e-ad32-a415d2f7a894",
         "74faa4ca-93c9-495a-b648-0c814090625a",
         "b21f6fef-4dbd-4474-a932-d70dd07dc556",
+        "0de42840-eed9-468b-ba94-fa201c41f5e4",
         "d8ab203d-4a8c-4a7e-837e-7b68c1563a08",
+        "1efcdb6f-da09-439a-8ccb-f8083a341327",
         "f39f5829-9551-4c52-8787-f0f8fabd83f3",
         "3e7a5a79-ac3b-480a-af48-64647d065f98",
         "877f5e60-ab1d-4bfc-a783-6f7c7ab59a89",

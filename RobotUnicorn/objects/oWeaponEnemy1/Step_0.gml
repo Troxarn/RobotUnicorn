@@ -33,13 +33,17 @@ else
 	allowfire = true;
 }
 
+if firingdelay <= (stop_trigger) &&  allowfire == true && (point_distance(x,y,oPlayer.x,oPlayer.y) < maxshootingrange)
+{
+	creator.firingstance = true;
+}
 
 //Firing gun
 if (firingdelay < 0) && allowfire == true && (point_distance(x,y,oPlayer.x,oPlayer.y) < maxshootingrange)
 {
 	recoil = maxrecoil;
 	firingdelay = maxfiringdelay;
-
+	
 
 	var leftspreadmultiplier = 1;
 	var i;

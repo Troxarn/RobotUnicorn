@@ -7,6 +7,11 @@ debris_time_to_live = 10;
 debris_speed = 7;
 debris_amount = 6;
 
+//Targeting variables
+target_seen = false;
+line_of_sight = false;
+
+
 //Movement variables
 npcdir = 0;
 dircooldown = noone;
@@ -20,6 +25,7 @@ verticalmovement = true;
 stoprandom = true;
 xorigin = oPlayer.x;
 yorigin = oPlayer.y;
+firingstance = false;
 
 choice1 = choose(-400,400);
 choice2 = choose(-400,400);
@@ -28,3 +34,7 @@ diagonalposition[0] = false;
 diagonalposition[1] = false;
 diagonalposition[2] = false;
 diagonalposition[3] = false;
+
+//Tilemap & collisions
+tilemap = layer_tilemap_get_id("CollisionTiles");
+bbox_side = 0;

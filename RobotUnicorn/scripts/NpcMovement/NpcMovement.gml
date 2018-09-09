@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//Stop Changing npcdir while shooting is true
+
+
 //Direction setter
 //Randomizer
 dircooldown --;
@@ -11,6 +14,8 @@ if dircooldown <= 0 && stoprandom = false
 	dircooldown = maxdircooldown;
 }
 
+if firingstance == false
+{
 //If outside of range
 var diagonalposcheck = false;
 for(i=0;i<=3;i++) {
@@ -24,6 +29,7 @@ for(i=0;i<=3;i++) {
 		diagonalposcheck = false;
 	}
 }
+
 
 if x <= (xorigin - range) && diagonalposcheck = false
 {
@@ -110,11 +116,9 @@ else
 		 diagonalposition[3] = false;
 	}
 }
-
-
+}
 
 //Direction code
-
 if npcdir = 0
 {
 	hsp =- npcspeed * 0;
@@ -169,6 +173,8 @@ if npcdir = 8
 	hsp =+ npcspeed * 0;
 	vsp =- npcspeed * 0;
 }
+
+
 
 if horizontalmovement = true
 {
