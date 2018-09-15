@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 //Gamepad deadzone
 gamepad_set_axis_deadzone(0, 0.3);
 
@@ -56,3 +57,6 @@ walkspeedaccY = 0
 walkspeedaccMax = 1 // Dont change, basicly just fucks up movement
 walkspeedaccXsign = 1
 walkspeedaccYsign = 1
+
+//ROBIN TEST//
+global.BadPoints = 0

@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 draw_self();
 
 if jumpstart == true
@@ -22,6 +23,4 @@ if jumpstop == true
 	jumpstop = false;
 }
 
-
-
-draw_text(x+30,y, string(dashing))
+draw_text(x,y,global.BadPoints)
