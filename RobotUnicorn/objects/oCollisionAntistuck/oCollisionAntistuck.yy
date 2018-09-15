@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "oCollisionAntistuck",
     "eventList": [
-        {
-            "id": "624c3708-8204-4f8a-a4bb-e3fcef470fe2",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "cec89a42-03ad-4acc-96e4-2b464f8e6733",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "cd2c5497-2c5e-412d-942e-98edb8ce8ae6"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

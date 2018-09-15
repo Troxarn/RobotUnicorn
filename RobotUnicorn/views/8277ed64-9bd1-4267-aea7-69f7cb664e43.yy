@@ -6,8 +6,8 @@
     "children": [
         "369830d7-b8c3-42d2-a072-76d26a9529fb",
         "07fcb859-d3be-4d01-a54f-d2b5c29af139",
-        "a46235a1-49f0-4f42-8648-69814fab9e74",
-        "35c45a22-185e-49c5-9b85-2dec0eec48b6"
+        "1ed10cde-1fa0-4e0e-a749-29abf702eb32",
+        "f75a4cee-8897-4549-937c-a1989ec88ede"
     ],
     "filterType": "GMObject",
     "folderName": "GUI Elements",
