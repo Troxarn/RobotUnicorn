@@ -1263,6 +1263,14 @@
             }
         },
         {
+            "Key": "dc730c21-babc-4a42-9c2c-8927af917244",
+            "Value": {
+                "id": "22e2b51d-a572-4130-8c14-4fe27d38c9f7",
+                "resourcePath": "rooms\\WhiteRoom_3\\WhiteRoom_3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "dda1c178-71ca-415a-8837-d4fc1e084cb8",
             "Value": {
                 "id": "d056eb6c-6163-4cfa-a219-12f5f29f6b85",

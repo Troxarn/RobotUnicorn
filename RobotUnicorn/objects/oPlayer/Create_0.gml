@@ -26,7 +26,7 @@ hsp = 0;
 vsp = 0;
 
 //Walkspeed
-walksp = 4;
+walksp = 2.5;
 
 //HP
 hp = 1000;
