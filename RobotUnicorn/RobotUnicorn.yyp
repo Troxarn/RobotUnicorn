@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "acc87786-73c8-401c-b8b5-0c4739be72f8",
+            "Value": {
+                "id": "591d4b7d-4cf3-4e17-ad13-a878c66e77f4",
+                "resourcePath": "sprites\\sPlayerDash\\sPlayerDash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "afcea531-bc91-42a6-91ef-45a70af3898d",
             "Value": {
                 "id": "5fe511e7-66c0-43a5-9814-28e2d8fea112",
@@ -1260,14 +1268,6 @@
                 "id": "b74aaba7-2c86-483c-8b5f-8f76d2745f5c",
                 "resourcePath": "objects\\oCollisionTest\\oCollisionTest.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "dc730c21-babc-4a42-9c2c-8927af917244",
-            "Value": {
-                "id": "22e2b51d-a572-4130-8c14-4fe27d38c9f7",
-                "resourcePath": "rooms\\WhiteRoom_3\\WhiteRoom_3.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

@@ -26,7 +26,7 @@ hsp = 0;
 vsp = 0;
 
 //Walkspeed
-walksp = 2.5;
+walksp = 4;
 
 //HP
 hp = 1000;
@@ -40,7 +40,10 @@ jumpstart = false;
 jumpstop = false;
 
 //Dashin
+allowdash = true;
 dashing = false;
+maxdashcd = room_speed;
+dashcd = 0;
 
 //Safe Coordinates
 safetyx = x;

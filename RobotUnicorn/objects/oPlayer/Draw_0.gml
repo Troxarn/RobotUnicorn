@@ -23,4 +23,15 @@ if jumpstop == true
 	jumpstop = false;
 }
 
+if dashing = true
+{
+	sprite_index = sPlayerDash;
+}
+else
+{
+	sprite_index = sPlayer;
+}
+
+
 draw_text(x,y,global.BadPoints)
+draw_text(x,y+10,string(dashing))

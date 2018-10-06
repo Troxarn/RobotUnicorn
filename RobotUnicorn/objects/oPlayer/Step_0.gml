@@ -84,7 +84,7 @@ if jumpduration <= 0 && !(jumpcd  <= 0)
 	jumpcd --
 }
 
-if keyboard_check_pressed(key_button7) && dashcd <= 0 && allowdash == true || gamepad_button_check_pressed(0,gamepad_key_button7) && dashcd <= 0 && allowdash == true
+if mouse_check_button_pressed(key_button7) && dashcd <= 0 && allowdash == true || gamepad_button_check_pressed(0,gamepad_key_button7) && dashcd <= 0 && allowdash == true
 {
 	dashing = true;
 	dashcd = maxdashcd;
@@ -92,8 +92,10 @@ if keyboard_check_pressed(key_button7) && dashcd <= 0 && allowdash == true || ga
 
 if dashing == true
 {
-
+	
 }
+
+
 if acceleration = true
 {
 //Robins accel/decel kod
