@@ -1,3 +1,3 @@
 AmIDead = false
-hp = 5
+hp = 4
 Delay = 100

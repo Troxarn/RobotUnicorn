@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-hp = 2;
+hp = 7;
 damage = 1
 
 debris_time_to_live = 10;
@@ -11,7 +11,7 @@ debris_amount = 6;
 npcdir = 0;
 dircooldown = noone;
 maxdircooldown = room_speed;
-npcspeed = 2;
+npcspeed = 1;
 hsp = 0;
 vsp = 0;
 range = 250;

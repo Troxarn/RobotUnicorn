@@ -84,7 +84,7 @@ if jumpduration <= 0 && !(jumpcd  <= 0)
 	jumpcd --
 }
 
-if mouse_check_button_pressed(key_button7) && dashcd <= 0 && allowdash == true || gamepad_button_check_pressed(0,gamepad_key_button7) && dashcd <= 0 && allowdash == true
+if keyboard_check_pressed(key_button7) && dashcd <= 0 && allowdash == true || gamepad_button_check_pressed(0,gamepad_key_button7) && dashcd <= 0 && allowdash == true
 {
 	dashing = true;
 	dashcd = maxdashcd;
@@ -92,10 +92,8 @@ if mouse_check_button_pressed(key_button7) && dashcd <= 0 && allowdash == true |
 
 if dashing == true
 {
-	
+
 }
-
-
 if acceleration = true
 {
 //Robins accel/decel kod
@@ -107,12 +105,13 @@ else
 	vsp = movey * walksp;
 }
 
+TilePlayerCollision();
+PlayerCollision();
+
 //Final movement
 x = x + hsp;
 y = y + vsp;
 
-
-TilePlayerCollision();
 
 //Close game
 if keyboard_check_pressed(vk_escape) 
