@@ -84,16 +84,44 @@ if jumpduration <= 0 && !(jumpcd  <= 0)
 	jumpcd --
 }
 
-if keyboard_check_pressed(key_button7) && dashcd <= 0 && allowdash == true || gamepad_button_check_pressed(0,gamepad_key_button7) && dashcd <= 0 && allowdash == true
+//Dashing
+if mouse_check_button_pressed(key_button7) && dashcd <= 0 && allowdash == true || gamepad_button_check_pressed(0,gamepad_key_button7) && dashcd <= 0 && allowdash == true
 {
 	dashing = true;
-	dashcd = maxdashcd;
+	dashcounter = maxdashcounter;
 }
 
 if dashing == true
 {
-
+	movex = old_movex;
+	movey = old_movey;
+	dashcounter --
+	dashfactor = dashfactor_max;
+	
+	if dashcounter <= 0
+	{
+		dashcd = maxdashcd;
+		dashcounter = maxdashcounter;
+		dashing = false;
+	}
 }
+
+
+
+if dashing == false
+{
+	old_movex = movex;
+	old_movey = movey;
+	dashfactor = dashfactor_default;
+	
+	if !(dashcd <= 0)
+	{
+		dashcd --
+	}
+}
+
+
+
 if acceleration = true
 {
 //Robins accel/decel kod
@@ -101,8 +129,8 @@ if acceleration = true
 }
 else
 {
-	hsp = movex * walksp;
-	vsp = movey * walksp;
+	hsp = movex * walksp * dashfactor;
+	vsp = movey * walksp * dashfactor;
 }
 
 TilePlayerCollision();
@@ -159,7 +187,7 @@ if keyboard_check_pressed(key_button2) ||  gamepad_button_check_pressed(0, oPlay
 }
 
 //Storing safe positioncoordinates
-if dashing == false
+if dashing == false && jumpduration <= 0
 {
 	safetytimer --
 	if safetytimer <= 0 && !collision_circle(x,y,32,oHole,false,true)

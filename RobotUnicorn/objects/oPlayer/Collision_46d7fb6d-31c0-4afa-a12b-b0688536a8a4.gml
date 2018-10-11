@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-/*
-with other
+
+if dashing == false && variable_instance_exists(other,"damage")
 {
 	hp -= other.damage;
-}
 
-instance_destroy();
+	with other
+	{
+		instance_destroy();
+	}
+}

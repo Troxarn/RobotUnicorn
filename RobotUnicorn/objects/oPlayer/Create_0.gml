@@ -18,6 +18,8 @@ meleeitem = oSword;
 //Movementcontrolvariable
 movex = 0;
 movey = 0;
+old_movex = 0;
+old_movey = 0;
 
 //Horizontal speed
 hsp = 0;
@@ -30,6 +32,7 @@ walksp = 2.5;
 
 //HP
 hp = 20;
+allowdamage = true; //use this to turn on and off damage to the player. If buggy, check the collisions with monsters, bullets etc.
 
 //Jumping
 jumpcd = 0;
@@ -41,6 +44,14 @@ jumpstop = false;
 
 //Dashin
 dashing = false;
+dashfactor_max = 2; //the number to factor in the movespeed calculation (hsp & vsp)
+dashfactor_default = 1;  //default factor in the multiplication of movespeed(hsp & vsp)
+dashfactor = dashfactor_default;
+maxdashcounter = 25 //number of steps the dash is active
+dashcounter = maxdashcounter
+dashcd = 0;
+maxdashcd = room_speed //dash cooldown after finishing a dash
+allowdash = true;
 
 //Safe Coordinates
 safetyx = x;
