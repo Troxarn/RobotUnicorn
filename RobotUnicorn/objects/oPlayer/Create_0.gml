@@ -44,10 +44,10 @@ jumpstop = false;
 
 //Dashin
 dashing = false;
-dashfactor_max = 2; //the number to factor in the movespeed calculation (hsp & vsp)
+dashfactor_max = 3; //the number to factor in the movespeed calculation (hsp & vsp)
 dashfactor_default = 1;  //default factor in the multiplication of movespeed(hsp & vsp)
 dashfactor = dashfactor_default;
-maxdashcounter = 25 //number of steps the dash is active
+maxdashcounter = 15 //number of steps the dash is active
 dashcounter = maxdashcounter
 dashcd = 0;
 maxdashcd = room_speed //dash cooldown after finishing a dash
