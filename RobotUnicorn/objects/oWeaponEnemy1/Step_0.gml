@@ -11,12 +11,14 @@ y = creator.y;
 //Gun angle
 image_angle = point_direction(x,y,oPlayer.x,oPlayer.y);
 
+//Check if Line of sight
+
 
 //decreasing firingdelay and recoil...?
 firingdelay --;
 recoil = max(0,recoil - 1)
 
-	//Checking recoilfiredelay and making shooting possible after recoil is completed.
+//Checking recoilfiredelay and making shooting possible after recoil is completed.
 if recoilfiredelay == true
 {
 	if recoil == 0
@@ -31,6 +33,12 @@ if recoilfiredelay == true
 else
 {
 	allowfire = true;
+}
+
+//checking line of sight
+if creator.loscheck = false
+{
+	allowfire = false;
 }
 
 if firingdelay <= (stop_trigger) &&  allowfire == true && (point_distance(x,y,oPlayer.x,oPlayer.y) < maxshootingrange)

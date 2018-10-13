@@ -198,6 +198,15 @@ if dashing == false && jumpduration <= 0
 	}
 }
 
+if invincibility = true
+{
+	invinc_frames --;
+	if invinc_frames <= 0
+	{
+		invinc_frames = max_invinc_frames;
+		invincibility = false;
+	}
+}
 
 if hp <= 0
 {

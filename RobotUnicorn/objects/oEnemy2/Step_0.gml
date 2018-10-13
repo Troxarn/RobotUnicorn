@@ -1,6 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//LoS delay
+delaytime--;
+if delaytime <= 0
+{
+	delaytime = maxdelaytime;
+}
+
+
 //Updates targetcoordinates (to playerposition)
 xorigin = oPlayer.x;
 yorigin = oPlayer.y;
@@ -10,6 +18,7 @@ if hp <= 0
 {
 	instance_destroy();
 }
+
 
 if firingstance == true && stop_while_firing == true
 {
@@ -22,18 +31,16 @@ if firingstance == true && stop_while_firing == true
 	}
 }
 
-//movement
-
 if firingstance = true
 {
 	npcdir = 8; // stops npc movement during firingstance
 }
-NpcMovement();
-TileEnemyCollision();
-
 //Angle toward player
 image_angle = point_direction(x,y,oPlayer.x,oPlayer.y) - 90;
 
+//movement
+NpcMovement();
+TileEnemyCollision();
 
 //shooting
 if shooting = true && runonce = false
@@ -52,3 +59,7 @@ if shooting = true && runonce = false
 	}
 	runonce = true;
 }
+
+
+
+

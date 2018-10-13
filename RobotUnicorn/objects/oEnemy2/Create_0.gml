@@ -14,7 +14,7 @@ maxdircooldown = room_speed;
 npcspeed = 1;
 hsp = 0;
 vsp = 0;
-range = 250;
+range = 100;
 horizontalmovement = true;
 verticalmovement = true;
 stoprandom = true;
@@ -50,3 +50,12 @@ diagonalposition[3] = false;
 //Tilemap & collisions
 tilemap = layer_tilemap_get_id("CollisionTiles");
 bbox_side = 0
+
+//Line of sight
+loscheck = false;
+maxdelaytime = room_speed*0.7;
+delaytime = maxdelaytime;
+
+lvaluex = 0;
+lvaluey = 0;
+amt = (100/112)/100;

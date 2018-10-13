@@ -69,5 +69,10 @@ walkspeedaccMax = 1 // Dont change, basicly just fucks up movement
 walkspeedaccXsign = 1
 walkspeedaccYsign = 1
 
+//Invincibility frames
+max_invinc_frames = 100;
+invinc_frames = max_invinc_frames;
+invincibility = false;
+
 //ROBIN TEST//
 global.BadPoints = 0
