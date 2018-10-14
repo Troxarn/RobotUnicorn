@@ -17,4 +17,4 @@ bulletobject = oBullet;
 weaponnbr = noone;
 
 //angle
-image_angle = oVariableChecker.weapon_angle
+//image_angle = global.weapon_angle

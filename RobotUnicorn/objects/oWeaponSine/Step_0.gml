@@ -21,9 +21,9 @@ y = oPlayer.y;
 //Gun angle
 if gamepad_is_connected(0)
 {
-	if oVariableChecker.hraxis != 0  || oVariableChecker.vraxis != 0
+	if global.hraxis != 0  || global.vraxis != 0
 	{
-		image_angle = point_direction(0, 0, oVariableChecker.hraxis, oVariableChecker.vraxis);
+		image_angle = point_direction(0, 0, global.hraxis, global.vraxis);
 	}
 
 }
@@ -123,6 +123,6 @@ else
 
 
 
-oVariableChecker.weapon_angle = image_angle;
+global.weapon_angle = image_angle;
 
 } // end of playercheck

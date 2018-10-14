@@ -15,4 +15,4 @@ allowfire = true;
 bulletobject = oBulletSine;
 
 
-image_angle = oVariableChecker.weapon_angle;
+image_angle = global.weapon_angle;

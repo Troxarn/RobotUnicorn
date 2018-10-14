@@ -8,7 +8,8 @@
         "261e4b20-b030-4984-af62-411442b7a16f",
         "0978e2e3-cae8-41df-8788-c5dd52339f89",
         "a9df74d4-9b3b-4ce2-be1f-e46b0117536e",
-        "e050e079-53b2-4690-bd61-ff04c05a9ca1"
+        "e050e079-53b2-4690-bd61-ff04c05a9ca1",
+        "133dfe99-6e2a-454b-9109-6d1a7e25c002"
     ],
     "filterType": "GMSprite",
     "folderName": "Collisions",

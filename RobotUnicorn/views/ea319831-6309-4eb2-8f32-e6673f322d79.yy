@@ -6,8 +6,7 @@
     "children": [
         "e5a11fbb-4225-48b4-aad3-ec6bc1008194",
         "dc45199c-1903-430f-99f7-8f0fd45894ab",
-        "cd2c5497-2c5e-412d-942e-98edb8ce8ae6",
-        "27603cf3-13e5-4fac-b340-9ef460c50771"
+        "cd2c5497-2c5e-412d-942e-98edb8ce8ae6"
     ],
     "filterType": "GMObject",
     "folderName": "CollisionblockersOLD",

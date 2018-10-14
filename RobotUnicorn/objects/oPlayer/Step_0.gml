@@ -160,27 +160,27 @@ else if gamepad_button_check_pressed(0, oPlayer.gamepad_key_button5) && !instanc
 //weapon changing
 if keyboard_check_pressed(key_button2) ||  gamepad_button_check_pressed(0, oPlayer.gamepad_key_button2)
 {
-	if instance_exists(oVariableChecker.weapon[1])
+	if instance_exists(global.weapon[1])
 	{
 		instance_destroy(oWeaponParent);
-		with instance_create_depth(x,y,depth,oVariableChecker.weapon[2])
+		with instance_create_depth(x,y,depth,global.weapon[2])
 		{
-			oVariableChecker.active_weapon = id;
-			if !(oVariableChecker.weapon2ammo == noone)
+			global.active_weapon = id;
+			if !(global.weapon2ammo == noone)
 			{
-				ammo = oVariableChecker.weapon2ammo;
+				ammo = global.weapon2ammo;
 			}
 		}
 	}
 	else
 	{
 		instance_destroy(oWeaponParent);
-		with instance_create_depth(x,y,depth,oVariableChecker.weapon[1])
+		with instance_create_depth(x,y,depth,global.weapon[1])
 		{
-			oVariableChecker.active_weapon = id;
-			if !(oVariableChecker.weapon1ammo == noone)
+			global.active_weapon = id;
+			if !(global.weapon1ammo == noone)
 			{
-				ammo = oVariableChecker.weapon1ammo;
+				ammo = global.weapon1ammo;
 			}
 		}
 	}

@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 runonce ++;
-if oVariableChecker.shield_count < 2 && runonce == 20
+if global.shield_count < 2 && runonce == 20
 {
 	instance_create_layer(1, 1, layer, oShield)
-	oVariableChecker.shield_count ++;
+	global.shield_count ++;
 }
 
 phase += angle;

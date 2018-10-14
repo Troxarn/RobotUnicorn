@@ -2,25 +2,25 @@
 // You can write your code in this editor
 
 //saving the weapon angle
-weapon_angle = 0;
+global.weapon_angle = 0;
 
-obtained_sword = true;
+global.obtained_sword = true;
 
 //Sinegun
-sinebulletamount = 0;
+global.sinebulletamount = 0;
 
 //Shields
-shield_count = 0;
-shieldgained = true;
+global.shield_count = 0;
+global.shieldgained = true;
 
 //Right stick
-hraxis = noone;
-vraxis = noone;
+global.hraxis = noone;
+global.vraxis = noone;
 
 //Weaponsystem
-active_weapon = oWeaponTemplate;
-weapon[1] = oWeaponTemplate;
-weapon[2] = oWeaponSine;
+global.active_weapon = oWeaponTemplate;
+global.weapon[1] = oWeaponTemplate;
+global.weapon[2] = oWeaponSine;
 
-weapon1ammo = noone;
-weapon2ammo = noone;
+global.weapon1ammo = noone;
+global.weapon2ammo = noone;
