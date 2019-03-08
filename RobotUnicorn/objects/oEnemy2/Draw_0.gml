@@ -3,6 +3,7 @@
 
 var i = 0;
 
+//Use tilemap information to draw a Line of Sight (LoS) line to the player
 if delaytime == maxdelaytime
 	{
 	for (i=0;i<=111;i++) 
@@ -10,7 +11,7 @@ if delaytime == maxdelaytime
 		lvaluex = lerp(x, oPlayer.x, amt*(i+1))
 		lvaluey = lerp(y, oPlayer.y, amt*(i+1))
 		draw_rectangle(lvaluex, lvaluey, lvaluex+1, lvaluey+1, false)
-		if tilemap_get_at_pixel("CollisionTiles", lvaluex, lvaluey)
+		if tilemap_get_at_pixel(tilemap, lvaluex, lvaluey)
 		{
 			loscheck = false;
 			break;
