@@ -23,6 +23,6 @@ if delaytime == maxdelaytime
 	}
 }
 
-draw_text(x,y +20, "loscheck = " + string(loscheck))
+draw_text(x,y +20, "loscheck = " + string(loscheck) + " HP:" + string(hp))
 
 draw_self();

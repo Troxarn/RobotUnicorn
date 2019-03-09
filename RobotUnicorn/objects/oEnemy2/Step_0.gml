@@ -39,7 +39,17 @@ if firingstance = true
 image_angle = point_direction(x,y,oPlayer.x,oPlayer.y) - 90;
 
 //movement
+if engage_runonce = false && loscheck = true
+{
+	engage_runonce = true;
+	engage_movement = true;
+}
+
+if engage_movement = true
+{
 NpcMovement();
+}
+
 TileEnemyCollision();
 
 //shooting

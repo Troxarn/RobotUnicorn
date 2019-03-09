@@ -148,14 +148,58 @@ if keyboard_check_pressed(vk_escape)
 }
 
 //Melee
-if keyboard_check_pressed(key_button5) && !instance_exists(meleeitem)
+	//CD-Countdowns
+if !meleecooldown <= 0
+{
+	meleecooldown --;
+}
+
+if !supermeleecooldown <= 0
+{
+	supermeleecooldown --;
+}
+
+	//NormalMelee
+if keyboard_check_pressed(key_button5) && !instance_exists(meleeitem) && meleecooldown <= 0
 {
 	instance_create_layer(x+ (dcos(point_direction(oPlayer.x,oPlayer.y, mouse_x, mouse_y)) * 15),y- (dsin(point_direction(oPlayer.x,oPlayer.y, mouse_x, mouse_y)) * 15),"Bullets",meleeitem);
+	meleecooldown = meleecooldownmax
 }
-else if gamepad_button_check_pressed(0, oPlayer.gamepad_key_button5) && !instance_exists(meleeitem)
+else if gamepad_button_check_pressed(0, oPlayer.gamepad_key_button5) && !instance_exists(meleeitem) && meleecooldown <= 0
 {
 	instance_create_layer(x+dcos(oWeaponParent.image_angle)*(sprite_width/3),y-dsin(oWeaponParent.image_angle)*(sprite_width/3),"Instances",oPlayer.meleeitem);
+	meleecooldown = meleecooldownmax
 }
+
+	//SuperMelee
+if keyboard_check(key_button5) || gamepad_button_check(0, oPlayer.gamepad_key_button5) && supermeleecooldown = 0
+{
+	if !supermeleecountdown <= 0
+	{
+	supermeleecountdown --;
+	walksp = walkspmax * walkspeedmultiplier_charging;
+	}
+}
+
+if keyboard_check_released(key_button5) || gamepad_button_check_released(0, oPlayer.gamepad_key_button5)
+	{
+		if supermeleecountdown = 0
+		{
+			with instance_create_depth(x,y,depth,oChargedStomp)
+				{
+					Creator = other.id;
+				}
+			meleecooldown = meleecooldownmax;
+			supermeleecooldown = supermeleecooldownmax;
+		}
+		if supermeleecountdown != supermeleecountdownmax
+		{
+			supermeleecountdown = supermeleecountdownmax;
+		}
+		walksp = walkspmax;
+	}
+
+
 
 //weapon changing
 if keyboard_check_pressed(key_button2) ||  gamepad_button_check_pressed(0, oPlayer.gamepad_key_button2)

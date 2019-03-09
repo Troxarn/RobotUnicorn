@@ -55,6 +55,8 @@ bbox_side = 0
 loscheck = false;
 maxdelaytime = room_speed*0.7;
 delaytime = maxdelaytime;
+engage_movement = false;
+engage_runonce = false;
 
 lvaluex = 0;
 lvaluey = 0;

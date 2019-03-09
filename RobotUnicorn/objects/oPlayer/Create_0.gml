@@ -13,8 +13,22 @@ instance_create_layer(1, 1, layer, oVariableChecker);
 	instance_create_layer(x + 180, y, layer, oCrosshair);
 }*/
 
-//Meleeitem
+//Melee
 meleeitem = oSword;
+meleecooldown = 0;
+meleecooldownmax = 100;
+
+supermeleecountdownmax = 100;
+supermeleecountdown = supermeleecountdownmax;
+
+supermeleecooldownmax = 200;
+supermeleecooldown = 0;
+
+walkspeedmultiplier_charging = 0.5;
+
+//Sprite draw variables
+maxflash = 20
+flash = maxflash
 
 //Movementcontrolvariable
 movex = 0;
@@ -29,8 +43,8 @@ hsp = 0;
 vsp = 0;
 
 //Walkspeed
-walksp = 2.5;
-
+walkspmax = 2.5 //Use this to change default walking speed
+walksp = walkspmax; //dont touch
 //HP
 hp = 20;
 allowdamage = true; //use this to turn on and off damage to the player. If buggy, check the collisions with monsters, bullets etc.

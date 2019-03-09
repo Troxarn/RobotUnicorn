@@ -37,8 +37,22 @@ else
 }
 
 
+//Spritecolor during charged stomp
+if supermeleecountdown < supermeleecountdownmax && supermeleecountdown > 0
+{
+	if hp > 0
+	{
+		shader_set(shRed);
+		draw_self();
+		shader_reset();
+	}
+}
 
 draw_text(x,y,hp)
 
 //draw_text(x-200,y,"dashcounter:" + string(dashcounter) + "       dashcd:" + string(dashcd));
-
+/*
+draw_text(x+20, y, "supermeleecountdown:" + string(supermeleecountdown));
+draw_text(x+20, y+12, "supermeleecocooldown:" + string(supermeleecooldown));
+draw_text(x+20, y+24, "meleecooldown:" + string(meleecooldown));
+*/

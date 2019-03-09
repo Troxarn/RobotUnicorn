@@ -487,10 +487,26 @@
             }
         },
         {
+            "Key": "46d061f4-3773-444c-b24d-b35de7783fff",
+            "Value": {
+                "id": "b96c338b-a5db-4c31-b4fb-611a683ab0e4",
+                "resourcePath": "views\\46d061f4-3773-444c-b24d-b35de7783fff.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "479d7b89-e791-4c69-9a37-d637b22aa4e9",
             "Value": {
                 "id": "5fdf2ba3-b8e2-4811-8626-2399cc6edca8",
                 "resourcePath": "sprites\\sSword\\sSword.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "49d42e42-19fd-45f3-a797-31fdd1d27b1b",
+            "Value": {
+                "id": "0e746f49-e254-4091-9c51-817c1baed516",
+                "resourcePath": "sprites\\sChargedStomp\\sChargedStomp.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1391,6 +1407,14 @@
             }
         },
         {
+            "Key": "d4863703-93ae-4f7d-b352-e41d8fc01943",
+            "Value": {
+                "id": "dbd3d875-ab13-4dac-8fa9-4097c727bed5",
+                "resourcePath": "views\\d4863703-93ae-4f7d-b352-e41d8fc01943.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d493b2f8-d5b1-4d5e-987f-f9c1670516eb",
             "Value": {
                 "id": "805ef3e4-20eb-48b2-8082-e01c1a071023",
@@ -1519,6 +1543,14 @@
             }
         },
         {
+            "Key": "eab5e736-0246-4f17-add1-7f1d3d7bb155",
+            "Value": {
+                "id": "5a33c874-0caf-4deb-a890-d65b5065c319",
+                "resourcePath": "objects\\oChargedStomp\\oChargedStomp.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "eb0d6bc6-c57b-451e-86d7-3ed5fc6c79f4",
             "Value": {
                 "id": "7f630807-1c5e-489b-954b-a9fcb3deb780",
@@ -1548,6 +1580,14 @@
                 "id": "7e7f88d9-0d7d-47af-a178-b10b5c87dd78",
                 "resourcePath": "scripts\\MovementDecel\\MovementDecel.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f202f0a4-cd8d-4c5f-b7fb-cddcfc0a5072",
+            "Value": {
+                "id": "a9de4ad5-2b56-4218-ad76-2fc57d2e3841",
+                "resourcePath": "objects\\oTestObject\\oTestObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
