@@ -35,16 +35,22 @@ diagonalposition[1] = false;
 diagonalposition[2] = false;
 diagonalposition[3] = false;
 
+
 //Tilemap & collisions
 tilemap = layer_tilemap_get_id("CollisionTiles");
-bbox_side = 0;
-
+collisionobject = oCollisionParent;
+bbox_side = 0
 
 //Line of sight
-loscheck = false;
+loscheck = false; //dont touch
+tracktarget = oPlayer; //This is the object name to track (e.g. oPlayer)
 maxdelaytime = room_speed*0.7;
 delaytime = maxdelaytime;
+engage_movement = false;
+engage_runonce = false;
 
 lvaluex = 0;
 lvaluey = 0;
 amt = (100/112)/100;
+
+debug = true;

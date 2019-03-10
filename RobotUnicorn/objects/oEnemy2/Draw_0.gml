@@ -1,28 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var i = 0;
+LineofSight(tracktarget, tilemap, collisionobject);
 
-//Use tilemap information to draw a Line of Sight (LoS) line to the player
-if delaytime == maxdelaytime
-	{
-	for (i=0;i<=111;i++) 
-	{
-		lvaluex = lerp(x, oPlayer.x, amt*(i+1))
-		lvaluey = lerp(y, oPlayer.y, amt*(i+1))
-		draw_rectangle(lvaluex, lvaluey, lvaluex+1, lvaluey+1, false)
-		if tilemap_get_at_pixel(tilemap, lvaluex, lvaluey)
-		{
-			loscheck = false;
-			break;
-		}
-		else
-		{
-			loscheck = true;
-		}
-	}
-}
-
-draw_text(x,y +20, "loscheck = " + string(loscheck) + " HP:" + string(hp))
+//draw_text(x,y+20, string(object_get_name(object_index)))
+//draw_text(x,y +20, "loscheck = " + string(loscheck) + " HP:" + string(hp))
 
 draw_self();

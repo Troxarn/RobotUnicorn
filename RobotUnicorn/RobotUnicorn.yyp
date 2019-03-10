@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "18f4c02d-8490-44a9-b3d7-d632e3437846",
+            "Value": {
+                "id": "4ffc54dc-37e6-4a15-b637-9ce537d75356",
+                "resourcePath": "scripts\\LineofSight\\LineofSight.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1de3ee5b-9bfb-4286-830a-f52352b0011d",
             "Value": {
                 "id": "02747d4d-1644-4256-9a1c-00a78f3b75a0",
@@ -698,7 +706,7 @@
             "Key": "6e960970-e643-4750-88b5-8dbe7747faa1",
             "Value": {
                 "id": "21958b37-5210-4fd2-84a1-647c1a1cad4b",
-                "resourcePath": "objects\\Collisionparent\\Collisionparent.yy",
+                "resourcePath": "objects\\oCollisionParent\\oCollisionParent.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1695,6 +1703,7 @@
         "a8947ad0-779f-401a-ab6a-3f5c46417d26",
         "ef366772-26df-487d-9336-49a765f84a33",
         "eb0d6bc6-c57b-451e-86d7-3ed5fc6c79f4",
+        "18f4c02d-8490-44a9-b3d7-d632e3437846",
         "46b6f3d7-6aa8-4bd9-b212-9af15e00be3e"
     ],
     "tutorial": ""

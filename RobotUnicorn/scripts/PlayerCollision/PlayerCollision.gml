@@ -1,7 +1,7 @@
 //Horizontal collision
-if (place_meeting(x+hsp,y,Collisionparent))
+if (place_meeting(x+hsp,y,oCollisionParent))
 {
-	while (!place_meeting(x+sign(hsp),y,Collisionparent))
+	while (!place_meeting(x+sign(hsp),y,oCollisionParent))
 	{
 			x = x+sign(hsp);
 	}
@@ -9,9 +9,9 @@ if (place_meeting(x+hsp,y,Collisionparent))
 }	
 
 //Vertical collision
-if (place_meeting(x,y+vsp,Collisionparent))
+if (place_meeting(x,y+vsp,oCollisionParent))
 {
-	while (!place_meeting(x,y+sign(vsp),Collisionparent))
+	while (!place_meeting(x,y+sign(vsp),oCollisionParent))
 	{
 			y = y+sign(vsp);
 	}
